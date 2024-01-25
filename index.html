@@ -11,23 +11,90 @@
   <label for="lname">Age:</label><br>
   <input type="text" id="lname" name="lname" value=""><br>
   <label for="fname">Job:</label><br>
-  <input type="text"id="fname" name="fname" value=""><br>
+  <input type="text" id="fname" name="fname" value=""><br>
   <input type="submit" value="Submit">
 </form> 
-
-    
+<!-- tạo viền table -->
+<style>
+  table, th, td {
+    border:2px solid black;
+    width: 200px;
+  }
+  </style>
+  
+    <!-- tạo data table -->
 <body style="background-color: beige;">
     <h1 style="text-align: center;font-size:50px;background-color:beige;">Schedule </h1>
-    <h1 style="color:blue;font-family:'times new roman',times,serif;font-size:29px;">Monday</h1>
-<h2 style="color: rgb(131, 11, 11);">Trà mãng cầu</h2>
-<img src="/image/Trà mảng cầu.jpg"width="100"height="100">
-<hr>
-<h2 style="color: rgb(141, 10, 10);">Trà nhiệt đới</h2>
-<img src="/image/trà nhiệt đới.jpg "width="100"height="100">
-<hr>
-<h2 style="color: rgb(108, 9, 9);">Trà ổi hồng</h2>
-<img src="/image/trà ổi hồng.jpg"width="100"height="100">
-<hr>
+    <table style="width:100%">
+      <tr>
+        <th>Preiod/Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thrusday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td><b>1-3</b></td>
+       <td style="color:blue;background-color:aquamarine;"><b>PP Nghiên cứu khoa học - B207</b></td> 
+       <td></td>
+       <td style="color: red;"><b>Anh văn 1 - A402</b></td>
+       <td></td>
+       <td></td>
+       <td style="color: red;"><b>Cấu trúc dữ liệu và giải thuật - F302</b></td>
+       <td></td>
+      
+      </tr>
+      <tr>
+        <td><b>4-6</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: red;"><b>Mạng máy tính - A306</b></td>
+        <td></td>
+            </tr>
+      <tr>
+        <td><b>7-9</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+
+      </tr>
+      <tr>
+        <td><b>8-11</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: blue;"><b>Giáo dục thể chất 1</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+
+      </tr>
+      <tr>
+        <td><b>10-12</b></td>
+        <td></td>
+        <td style="color: blue;"><b>Đổi mới sáng tạo và khởi nghiệp - B402</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: blue;"><b>Giáo dục QP-AN2 - F502</b></td>
+        <td></td>
+      
+
+      </tr>
+    </table>
+    
 <!-- Form này chỉ được chọn 1 -->
 <form>
     <p><cite>Bạn thích loại nước uống nào nhất?</cite></p>
