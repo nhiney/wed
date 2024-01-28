@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <title>Nguyễn Thị Yến Nhi</title>
+    <style>
+        div.scrollmenu{
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+
+    </style>
+
 </head>
 <title> My page title</title>
-
 <link rel="icon" type="image/png" sizes="16x16"  href="/public/favicon-16x16.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
@@ -15,9 +35,19 @@
     width: 200px;
   }
 </style>
+<!--dien title vao thanh menu -->
+<div class="scrollmenu">
+    <a href="/abcd.html">Home</a>
+    <a href="#news">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">learning</a>
+    <a href="#blog">Blog</a>
+    <a href="#custom">Custom</a>
+</div>
 
 <!-- tạo data table -->
 <body style="background-color:white;">
+<img src="">
 <h2><b>University student information  &#128513;</b></h2>
 
     <form action="/action_page.php">
