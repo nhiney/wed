@@ -1,89 +1,257 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+    <meta charset="UTF-8"/>
+    <title>Nguyễn Thị Yến Nhi</title>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
         }
-      });
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+
+    </style>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<!--dien title vao thanh menu -->
+<div class="scrollmenu">
+    <a href="/home.html">Home</a>
+
+    <a href="/about.html">About</a>
+    <a href="lab1/lab1ex1.html">Lab1ex1</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/learning.html">learning</a>
+    <a href="/blog.html">Blog</a>
+
+
+</div>
+
+<!-- tạo data table -->
+<body style="background-color:white;">
+<img src="
+">
+<h2><b>University student information &#128513;</b></h2>
+
+<form action="/action_page.php">
+    <label for="fname"><b>Name:</b></label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname"><b>Age:</b></label><br>
+    <input type="text" id="lname" name="lname" value=""><br>
+    <label for="fname"><b>Job:</b></label><br>
+    <input type="text" id="gname" name="gname" value=""><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h1 style="text-align: center;font-size:50px;background-color:lightpink;">Schedule </h1>
+<table style="width:100%">
+    <tr>
+        <th>Preiod/Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thrusday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td><b>1-3</b></td>
+        <td style="color:blue;background-color:aquamarine;"><b>PP Nghiên cứu khoa học -
+            <mark>B207</mark>
+        </b></td>
+        <td></td>
+        <td style="color: red;background:beige;"><b>Anh văn 1 -
+            <mark>A402</mark>
+        </b></td>
+        <td></td>
+        <td></td>
+        <td style="color: red;background: beige;"><b>Cấu trúc dữ liệu và giải thuật -
+            <mark>F302</mark>
+        </b></td>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td><b>4-6</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: red;background: beige;"><b>Mạng máy tính -
+            <mark>A306</mark>
+        </b></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>7-9</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+
+    </tr>
+    <tr>
+        <td><b>8-11</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: blue;background-color:aquamarine;"><b>Giáo dục thể chất 1</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+
+    </tr>
+    <tr>
+        <td><b>10-12</b></td>
+        <td></td>
+        <td style="color: blue;background-color:aquamarine;"><b>Đổi mới sáng tạo và khởi nghiệp -
+            <mark>B402</mark>
+        </b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: blue;background-color:aquamarine;"><b>Giáo dục QP-AN2 -
+            <mark>F502</mark>
+        </b></td>
+        <td></td>
+    </tr>
+</table>
+<!--  ul ds dau cham -->
+<ul>
+    <li> Công nghệ phần mêm</li>
+    <li> Khoa học dữ lieu</li>
+    <li> An toàn thông tin</li>
+</ul>
+<!-- ol ds so 1,2,3...-->
+<ol>
+    <li>Công nghệ phần mem</li>
+    <li>Bảo mât thông tin</li>
+</ol>
+<dl>
+    <dt>Công nghệ phần mêềm</dt>
+    <dd>Cong nghệ pần mềm</dd>
+</dl>
+<!-- Form này chỉ được chọn 1 -->
+<form>
+
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html"><b>Nguyên Lý ngôn ngữ lập trình</b></label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css"><b>Trà ổi hồng</b></label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript"><b>Trà mãng cầu</b></label>
+</form>
+<!-- form thứ 2 có thể chọn được 2 cái trở lên -->
+<p><cite> Những môn chuyên ngành IT </cite></p>
+<form action="/action_page.php">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1">Nguyên Lý ngôn ngữ lập trình </label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> Thực hành Nguyên Lý ngôn ngữ lập trình </label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3">Cấu trúc dữ liệu và giải thuật</label><br><br>
+    <label for="vehicle3"> Mạng máy tính </label><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>
+    bánh tráng trộn<br> là món ăn vặt phổ biến.</p>
+
+<pre> <address><p style="color:black ;"><br> <cite>Thôn 4, xã Hàm Đức, huyện Hàm Thuận Bắc, tỉnh Bình Thuận</cite></p>
+    <cite>SĐT: 0326583876</cite><br>
+    <cite>email: yennhinguyen090605@gmail.com</cite> <br>
+    <a href="https://www.facebook.com/profile.php?id=100025133813586&mibextid=LQQJ4d">facebook</a>
+    <a href="https://github.com/nhiney/wed">github</a>
+    </address>
+</pre>
+<p>H<sub>2</sub>O</p>
+<p><b>bla bla bla</b></p>
+<p><strong>Bánh mì</strong></p>
+<p><i>Bánh mì</i></p>
+<p><em>Bánh mì</em></p>
+<p><small>Bánh mì</small></p>
+<p><big>Bánh mì</big></p>
+
+<p> Bánh
+    <mark>mì</mark>
+</p>
+<p>
+    <del>Bánh mì</del>
+</p>
+
+<p>mì tôm: <q>Là loại thực phẩm phổ biến</q></p>
+<p>Nguyễn <abbr title="World Health Organization">Thị</abbr> Yến Nhi</p>
+
+<bdo dir="rtl">Nguyễn Thị Yến Nhi</bdo>
+<bdo dir="rtl"> information Technology</bdo>
+<!-- This is a comment -->
+<p>Nguyễn Thị Yến Nhi HUIT</p>
+<!-- Comments are not displayed in the browser -->
+<p style="background-color:Tomato;">
+
+<p style="border: 2px solid tomato;">mèo</p>
+<h1 style="background-color:rgb(255, 99, 71);">mèo</h1>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">công nghệ phần mềm</a></li>
+            <li><a href="#">bảo mật thông tin</a></li>
+            <li><a href="#">khoa học dữ liệu</a></li>
+            <li><a href="#">an toàn thông tin</a></li>
+        </ul>
+    </nav>
+
+    <p>x<sup>2</sup></p>
+
+    <blockquote>công nghệ thông tin</blockquote>
+    <p><q>công nghệ thông tin</q></p>
+
+    <h1 style="color:blue;">Công nghệ thông tin</h1>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L52YTW0PY5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-L52YTW0PY5');
     </script>
-  </body>
+</body>
 </html>
+
+
