@@ -6,81 +6,100 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <style>
-        body {
-            background: pink;
+        .main-menu {
+            /* hien thi*/
+            display: flex;
         }
 
-        .menu ul, .menu li {
-            margin: 0;
-            padding: 0;
+        a {
+            text-decoration: none;
         }
 
-        .menu ul {
-            background: gray;
+        ul {
             list-style: none;
         }
 
-        .menu li {
-            float: left;
-            position: relative;
-            width: auto;
-            font-weight: bold;
-            font-size: 13px;
-            font-family: Corbel;
-            padding: 15px 55px;
-            text-align: center;
-            text-decoration: none;
-            transition: all 0.25s ease;
-        }
-
-        .menu li :hover a {
-            background: #34495e;
-        }
-
-        #sub-menu {
-            left: 0;
+        .sub-menu {
+            /* kha nang hiển thị*/
+            display: none;
+            /* độ mờ */
             opacity: 0;
             position: absolute;
-            top: 35px;
-            visibility: hidden;
-            z-index: 1;
+            top: 40px;
+            right: 0;
+            width: 100%;
+        }
+
+        .main-menu li:hover .sub-menu {
+
+            /* hiển thị*/
+            display: block;
+            /* độ mờ */
+            opacity: 1;
+            width: 300px;
+        }
+
+        li {
+            border: 1px solid black;
+            background: #333333;
+            padding: 12px;
+            margin-right: 12px;
+            position: relative;
+        }
+
+        li a {
+            color: white;
+        }
+
+        .sub-menu li:hover a {
+            display: block;
+            opacity: 1;
+            width: 300px;
 
         }
 
+        .main-menu-item {
+            background: #333333;
+        }
+
+        .main-menu-item:hover  {
+            background: brown;
+        }
 
     </style>
-
 
 </head>
 
 
 <body>
 <nav class="menu">
-    <ul>
-        <li><a href="/public/home.html">Home</a></li>
-        <li><a href="/public/about.html">About</a></li>
-        <li><a href="/public/lab1">LAB01</a>
-            <ul id="sub-menu">
+    <ul class="main-menu">
+        <li class="main-menu-item"><a href="/public/home.html">Home</a></li>
+        <li class="main-menu-item"><a href="/public/about.html">About</a></li>
+        <li class="main-menu-item">
+            <a href="/public/lab1">LAB01</a>
+            <ul class="sub-menu">
                 <li>
-                    <a href="/public/lab1/lab1ex1.html"></a>
-                    <a href="/public/lab1/lab1ex2.html"></a>
-                    <a href="/public/lab1/lab1ex3.html"></a>
+                    <a href="/public/lab1/lab1ex1.html">lab 1.1</a>
+                    <a href="/public/lab1/lab1ex2.html">lab 1.2</a>
+                    <a href="/public/lab1/lab1ex3.html">lab 1.3</a>
                 </li>
             </ul>
         </li>
-        <li><a href="/public/lab2">LAB02</a>
-            <ul id="sub1-menu">
+        <li class="main-menu-item"><a href="/public/lab2">LAB02</a>
+            <ul class="sub-menu">
                 <li>
-                    <a href="/public/lab2/lab2ex1.html"></a>
-                    <a href="/public/lab2/lab2ex2.html"></a>
+                    <a href="/public/lab2/lab2ex1.html">lab 2.1</a>
+                    <a href="/public/lab2/lab2ex2.html">lab 2.2</a>
                 </li>
             </ul>
         </li>
-        <li><a href="/public/lab3">LAB03</a>
-            <ul id="sub2-menu">
+        <li class="main-menu-item"><a href="/public/lab3">LAB03</a>
+            <ul class="sub-menu">
                 <li>
-                    <a href="/public/lab3/lab3ex1.html"></a>
+                    <a href="/public/lab3/lab3ex1.html">lab 3.1</a>
                 </li>
             </ul>
         </li>
