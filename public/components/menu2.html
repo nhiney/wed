@@ -23,38 +23,31 @@
 
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            /*justify-content: space-around;*/
 
             color: whitesmoke;
-
-
             padding-top: 20px;
             height: 70px;
             width: 700px;
 
-
             list-style: none;
-
         }
 
         .menu4 {
-            display: inline-block;
+            display: none;
             list-style: none;
-            opacity: 0;
-            visibility: visible;
             position: absolute;
-            padding: 0 20px;
-
+            padding: 15px;
+            background: #333333;
+            color: white;
+            margin-right: 50px;
+            /*padding-top: 50px;*/
+            margin-top: 20px;
 
         }
 
         .menu2:hover .menu4 {
-            opacity: 1;
-            visibility: visible;
-            color: white;
-            background: #333333;
-            margin-right: 50px;
-            margin-top: 50px;
+            display: block;
         }
 
         .menu2:hover {
@@ -71,8 +64,6 @@
             width: 125px;
             text-align: left;
             border-bottom: 1px solid gray;
-
-
         }
 
     </style>
@@ -85,7 +76,7 @@
     <ul class="menu1">
         <li class="menu2 w3-red"><a href="/public/home.html "></a>Home</li>
         <li class="menu2"><a href="/public/about.html"></a>About</li>
-        <li class="menu2"><a href="/public/lab1"></a>Lab01
+        <li class="menu2"><a href="/public/lab1"></a>LAB01
             <ul class="menu4">
                 <li class="menu5"><a href="/public/lab1/lab1ex1.html"></a>Lab 1-1</li>
                 <li class="menu5"><a href="/public/lab1/lab1ex2.html"></a>Lab 1-2</li>
@@ -93,7 +84,7 @@
             </ul>
 
         </li>
-        <li class="menu2"><a href="/public/lab2"></a>Lab02
+        <li class="menu2"><a href="/public/lab2"></a>LAB02
             <ul class="menu4">
                 <li class="menu5"><a href="/public/lab2/lab2ex1.html"></a>Lab 2-1</li>
                 <li class="menu5"><a href="/public/lab2/lab2ex2.html"></a>Lab 2-2</li>
@@ -102,11 +93,11 @@
 
 
         </li>
-        <li class="menu2"><a href="/public/lab3"></a>Lab03</li>
-        <li class="menu2"><a href="/public/lab4"></a>Lab04</li>
-        <li class="menu2"><a href="/public/lab5"></a>Lab05</li>
-        <li class="menu2"><a href="/public/lab6"></a>Lab06</li>
-        <li class="menu2"><a href="/public/lab7"></a>Lab07</li>
+        <li class="menu2"><a href="/public/lab3"></a>LAB03</li>
+        <li class="menu2"><a href="/public/lab4"></a>LAB04</li>
+        <li class="menu2"><a href="/public/lab5"></a>LAB05</li>
+        <li class="menu2"><a href="/public/lab6"></a>LAB06</li>
+        <li class="menu2"><a href="/public/lab7"></a>LAB07</li>
 
 
     </ul>
