@@ -1,140 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <style>
-        .main-menu {
-            /* hien thi*/
+        .menu1 {
+            background: #333333;
+            padding: 9px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .menu2 {
             display: flex;
-        }
-
-        a {
-            text-decoration: none;
-
-        }
-
-        ul {
+            flex-direction: row;
+            color: whitesmoke;
+            padding-top: 18px;
+            height: 60px;
+            width: 700px;
+            font-family: 'Your Preferred Font', sans-serif;
             list-style: none;
+            font-weight: bold;
+            position: relative; /* Added position relative for proper sub-menu positioning */
         }
 
-        .sub-menu {
-            /* kha nang hiển thị*/
+        .menu4 {
             display: none;
-            /* độ mờ */
-            opacity: 0;
+            list-style: none;
             position: absolute;
-            top: 40px;
-            right: 0;
-
-            width: 100%;
-        }
-
-        .main-menu li:hover .sub-menu {
-
-            /* hiển thị*/
-            display: block;
-            /* độ mờ */
-            opacity: 1;
-            width: 300px;
-
-        }
-
-        li {
-            border: 1px solid black;
-
+            padding: 15px;
             background: #333333;
-            padding: 12px;
-            margin-right: 12px;
-            position: relative;
-
-
-        }
-
-        li a {
             color: white;
+            margin-right: 50px;
+            margin-top: 20px;
         }
 
-        .sub-menu li:hover a {
+        .menu2:hover .menu4 {
             display: block;
-            opacity: 1;
-            width: 300px;
-
         }
 
-        .main-menu-item {
-            background: #333333;
+        .menu2:hover {
+            background: pink;
         }
 
-        .main-menu-item:hover  {
-            background: brown;
+        .menu5:hover {
+            color: deeppink;
         }
 
+        .menu5 {
+            margin-right: 5px;
+            height: 30px;
+            width: 125px;
+            text-align: left;
+            border-bottom: 1px solid gray;
+        }
     </style>
-
 </head>
-
-
 <body>
-<nav class="menu">
-    <ul class="main-menu">
-        <li class="main-menu-item"><a href="/public/home.html">Home</a></li>
-        <li class="main-menu-item"><a href="/public/about.html">About</a></li>
-        <li class="main-menu-item">
-            <a href="/public/lab1">LAB01</a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="/public/lab1/lab1ex1.html">lab 1.1</a>
-                    <a href="/public/lab1/lab1ex2.html">lab 1.2</a>
-                    <a href="/public/lab1/lab1ex3.html">lab 1.3</a>
-                </li>
-            </ul>
-        </li>
-        <li class="main-menu-item"><a href="/public/lab2">LAB02</a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="/public/lab2/lab2ex1.html">lab 2.1</a>
-                    <a href="/public/lab2/lab2ex2.html">lab 2.2</a>
-                </li>
-            </ul>
-        </li>
-        <li class="main-menu-item"><a href="/public/lab3">LAB03</a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="/public/lab3/lab3ex1.html">lab 3.1</a>
-                </li>
-            </ul>
-        </li>
-        <li><a href="/public/lab4">LAB04</a></li>
-        <li><a href="/public/lab5">LAB05</a></li>
-        <li><a href="/public/lab6">LAB06</a></li>
-        <li><a href="/public/lab7">LAB07</a></li>
+
+<div class="menu1">
+    <ul class="menu2 w3-red"><a href="/public/home.html" target="_parent">Home</a></ul>
+    <ul class="menu2"><a href="/public/about.html" target="_parent">About</a></ul>
+    <ul class="menu2"><a href="/public/lab1" target="_parent">LAB 01</a>
+        <ul class="menu4">
+            <li class="menu5"><a href="/public/lab1/lab1ex1.html" target="_parent">Lab 1-1</a></li>
+            <li class="menu5"><a href="/public/lab1/lab1ex2.html" target="_parent">Lab 1-2</a></li>
+            <li class="menu5"><a href="/public/lab1/lab1ex3.html" target="_parent">Lab 1-3</a></li>
+        </ul>
     </ul>
-</nav>
+    <!-- Repeat the pattern for other menu items -->
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
