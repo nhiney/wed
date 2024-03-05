@@ -16,4 +16,4 @@ function includeHTML(file, idSelector) {
 }
 
 
-includeHTML("../public/components/menu2.html", "menu-section");
+includeHTML("https://nguyenthiyennhi.web.app/public/components/menu2.html", "menu-section");
